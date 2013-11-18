@@ -1,0 +1,184 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>SEAPUNK NAME GENERATOR</title>
+	<style>
+	body{
+		background-size:cover;
+		background-color:yellow;
+		text-align:center;
+		padding-top:20%;
+		font-family:sans-serif;
+		persective:500;
+	}
+	@-webkit-keyframes swing{
+		20%{
+			-webkit-transform:rotateY(10deg);
+		}
+		60%{
+			-webkit-transform:rotateY(-10deg);
+		}
+	}
+	span{                 
+		display:inline-block;
+		font-size:60px;
+		color:yellow;
+		text-shadow:2px 2px purple,4px 4px purple;
+		font-weight:bold;
+		-webkit-animation:swing 4s infinite ease-in-out;
+	}
+	input{
+		user-select:none;
+		position:fixed;
+		top:69%;
+		background:#eee;
+		border:5px outset #ccc;
+		color:#ccc;
+		font-size:14px;
+		width:260px;
+		padding:10px 0;
+		left:50%;
+		margin-left:-130px;
+	}
+	input:hover {
+		border:5px inset #ccc;
+		cursor:pointer;
+	}
+	input:active{
+		border:5px inset yellow;
+		background:yellow;
+	}
+	</style>
+</head>
+<body>
+	<span class="three"></span>
+	<span class="one"></span>
+	<span class="two"></span>
+	<span class="three"></span>
+	<br>
+	<input type="button" value="GENERATE N3W NAME"></input>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+	<script>
+	var firstArray = [
+	'YUNG',
+	'TE▲M', 
+	'LiL',   
+	'ヨフォシ–',
+	'CVLT',
+	'ṪHE',      
+	'عميق',
+	'LIL',
+	'SAMSUNG',
+	'HD ',
+	'シ',
+	'ΔCID',
+	'†Ɍïɭɭ', 
+	'TEEN',
+	'dj',
+	'вода',
+	'звучи',
+	'の男',
+	'#RARE#',
+	'TRΔP',
+	'ΔQUA',                    
+	'۞666',
+	'DJ'
+	];
+	var secondArray = [
+	'L0RD',
+	'W4ṪER',
+	'㎒ ⦰⠁⡠',
+	'.rar',
+	'─╤╦︻ Pr0',
+	'GURLZ',
+	'TRA$H',
+	'MANG',
+	'F∀NGS',
+	'UNIṪ',
+	'.mp3',
+	'•WINZIP',
+	'SLVGS',
+	'MOLLIWATER',
+	'G∞gle',
+	'BOI',
+	'F00TB∀TH',
+	'∞WAVE',
+	'∞CHVRCH',
+	'PVRP',
+	'TEK',
+	'韵律',
+	'.biz',
+	'420',
+	' W A K E',
+	'CLOUDZ',
+	'TATZ',
+	'THUUG',
+	'M00N',
+	'CRYSTAL ۞',
+	'SL1ME',
+	'∞VIBEZ',
+	'S§S',
+	'CTRL',
+	'سقى',
+	'CH▲SE',
+	'MANHΔTṪAN',
+	'أضاف' ,
+	'GVCCI',
+	'UNIT',
+	'SWΞG',
+	'G0D',
+	'CORE',
+	'EYEZ',
+	' Ṫ▲C0BΞLL',
+	'NETSC∀PE',
+	' M A C A '
+	];
+	var thirdArray = [
+	'†',
+	'▲',
+	'▩',
+	'☥',
+	'☯',
+	'♛',
+	'✌',
+	'O0⦰',
+	'∆',
+	'iii', 
+	'▩',
+	'▩',
+
+	'▼▼',
+	'##',
+	' // ',
+	'±',
+	'//◭//',
+	'▽▽'
+	];
+	var fourthArray = [
+	'http://okfocus.s3.amazonaws.com/seapunkimages/vision3dae.jpg',
+	'http://okfocus.s3.amazonaws.com/seapunkimages/br06_tropic_beach_by_71m3l3ss.jpg',
+	'http://okfocus.s3.amazonaws.com/seapunkimages/beckbig.jpg',
+	'http://okfocus.s3.amazonaws.com/seapunkimages/space.jpg',
+	'http://okfocus.s3.amazonaws.com/seapunkimages/MtlCrs01.jpg',
+	'http://okfocus.s3.amazonaws.com/seapunkimages/3dpyramid.jpg',
+	'http://okfocus.s3.amazonaws.com/seapunkimages/Pyramid03.jpg'
+	];
+	function generate(){
+		var rand1 = firstArray[Math.floor(Math.random() * firstArray.length)];
+		var rand2 = secondArray[Math.floor(Math.random() * secondArray.length)];
+		var rand3 = thirdArray[Math.floor(Math.random() * thirdArray.length)];
+		var rand4 = fourthArray[Math.floor(Math.random() * fourthArray.length)];
+		$('.one').text(rand1);
+		$('.two').text(rand2);
+		$('.three').text(rand3);
+		$('body').css('background-image', 'url('+ rand4 +')');
+	}
+	$(function(){
+		$("input").click(generate);
+		generate();
+	});
+
+
+	</script>
+</body>
+</html>
